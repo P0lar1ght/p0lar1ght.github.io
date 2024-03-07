@@ -1,6 +1,6 @@
 ---
 title: Java反序列化利用链之CommonsCollections1
-date: 2024-03-06 18:53:00 +0800
+date: 2024-03-06 18:50:00 +0800
 img_path: /
 categories: [Java安全, Java反序列化]
 tags: [Java安全, Java反序列化]     
