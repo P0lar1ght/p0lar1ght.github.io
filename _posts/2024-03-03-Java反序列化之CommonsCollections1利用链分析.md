@@ -9,6 +9,8 @@ tags: [Java安全, Java反序列化]
 
 # CommonsCollections1
 
+[TOC]
+
 ## org.apache.commons.collections.functors.InvokerTransformer
 
 危险类`InvokerTransformer`的实现如下：
