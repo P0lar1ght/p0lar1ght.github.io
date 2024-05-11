@@ -10,7 +10,7 @@ tags: [Java安全, BCEL ClassLoader]
 
 ## BCEL ClassLoader如何使用
 
-在`JDK<JDK8u251`的版本里`BCEL`这个包中有个有趣的类`com.sun.org.apache.bcel.internal.util.ClassLoader`，他是一个`ClassLoade`r，但是他重写了Java内置的`ClassLoader#loadClass()`方法。
+在`JDK<JDK8u251`的版本里`BCEL`这个包中有个有趣的类`com.sun.org.apache.bcel.internal.util.ClassLoader`，他是一个`ClassLoader`，但是他重写了Java内置的`ClassLoader#loadClass()`方法。
 
 在`ClassLoader#loadClass()`中，其会判断类名是否是`$$BCEL$$`开头，如果是的话，将会对这个字符串进行`decode`。
 
