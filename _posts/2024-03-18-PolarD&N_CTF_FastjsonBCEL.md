@@ -1,10 +1,12 @@
-```
+---
 title: 记一次CTF出题之FastjsonBCEL_WP篇
 date: 2024-03-18 18:53:00 +0800
 img_path: /
 categories: [CTF, CTF出题记录]
-tags: [CTF, CTF出题记录]   
-```
+tags: [CTF, CTF出题记录]  
+---
+
+
 
 # WEB-FastjsonBCEL
 
