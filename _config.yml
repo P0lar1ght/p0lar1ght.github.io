@@ -101,7 +101,7 @@ comments:
   # Giscus options › https://giscus.app
   giscus:
     repo: P0lar1ght/p0lar1ght.github.io             # <gh-username>/<repo>
-    repo_id: R_kgDOLH9FqQ
+    repo_id: R_kgDOLbT12A
     category: Announcements
     category_id: DIC_kwDOLH9Fqc4Ccl-1
     mapping: pathname          # optional, default to 'pathname'
