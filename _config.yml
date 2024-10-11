@@ -103,9 +103,9 @@ comments:
     repo: P0lar1ght/p0lar1ght.github.io             # <gh-username>/<repo>
     repo_id: R_kgDOLbT12A
     category: Announcements
-    category_id: DIC_kwDOLH9Fqc4Ccl-1
+    category_id: DIC_kwDOLbT12M4CjQ8K
     mapping: pathname          # optional, default to 'pathname'
-    input_position:    # optional, default to 'bottom'
+    input_position: bottom   # optional, default to 'bottom'
     lang:              # optional, default to the value of `site.lang`
     reactions_enabled: # optional, default to the value of `1`
 
