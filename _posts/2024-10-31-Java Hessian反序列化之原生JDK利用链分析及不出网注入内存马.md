@@ -1,4 +1,14 @@
-# Java Hessian反序列化漏洞原生JDK不出网注入内存马
+---
+title: Java Hessian反序列化之原生JDK利用链分析以及不出网注入内存马
+date: 2024-10-31 18:53:00 +0800
+img_path: /
+categories: [Java安全, Java反序列化]
+tags: [Java安全, Java反序列化]     
+---
+
+
+
+# Java Hessian反序列化之漏洞原生JDK不出网注入内存马
 
 ## 场景
 
