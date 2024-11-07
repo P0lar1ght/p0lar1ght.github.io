@@ -233,11 +233,11 @@ Hessian 相对比原生反序列化的利用链，有几个限制：
 
 ### 0ctf2022 hessian-only-jdk writeup jdk原生链
 
-https://xz.aliyun.com/t/11732?time__1311=Cq0xRiPWuDlx0nD2QQGCDn7o3PzlDQumD#/
+[https://xz.aliyun.com/t/11732?time__1311=Cq0xRiPWuDlx0nD2QQGCDn7o3PzlDQumD]: 	"0ctf2022 hessian-only-jdk writeup jdk原生链"
 
 ### 探寻Hessian JDK原生反序列化不出网的任意代码执行利用链
 
-https://blog.wanghw.cn/security/hessian-deserialization-jdk-rce-gadget.html#/
+[https://blog.wanghw.cn/security/hessian-deserialization-jdk-rce-gadget.html]: 	"探寻Hessian JDK原生反序列化不出网的任意代码执行利用链"
 
 ### 调用栈：
 
@@ -256,7 +256,7 @@ des:109, Poc (ysoserial.Hessian2.poc)
 main:85, Poc (ysoserial.Hessian2.poc)
 ```
 
-```json
+```
 HessianInput#readObject()->HashMap#put()->Hashtable#equals()->UIDefaults#get()->SwingLazyValue#createValue()->sun.reflect.misc.MethodUtil#invoke()->任意方法调用加载字节码
 
 HessianInput#readObject()->HashMap#put()->Hashtable#equals()->UIDefaults#get()->SwingLazyValue#createValue()->任意类实例化
@@ -471,7 +471,7 @@ HessianInput#readObject()->HashMap#put()->Hashtable#equals()->UIDefaults#get()->
 
 `SwingLazyValue#createValue()`这里触发任意方法可以借助`sun.reflect.misc.MethodUtil#invoke()`去加载恶意字节码。
 
-```JAVA
+```java
     public Object createValue(UIDefaults var1) {
         try {
             ReflectUtil.checkPackageAccess(this.className);
