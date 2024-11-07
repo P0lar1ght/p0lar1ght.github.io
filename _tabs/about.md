@@ -12,5 +12,7 @@ order: 4
 
 友链👇：
 
-YTZeri ：[https://ytyyds.github.io]: https://ytyyds.github.io
+YTZeri ：<https://ytyyds.github.io>
+
+
 
