@@ -1,11 +1,9 @@
 ---
 title: 记一次CTF出题之一ezUtil_WP篇
-date: 2024-12-11 18:53:00 +0800
+date: 2024-12-11 18:00:00 +0800
 img_path: /
 categories: [CTF, CTF出题记录]
 tags: [CTF, CTF出题记录]  
-
-
 ---
 
 
@@ -171,6 +169,8 @@ Content-Length: 151
 ```
 
 触发写入的`class`的恶意方法。
+
+**注意**：这里有个坑，题目这边是先创建的`$JAVA_HOME/jre/classes`文件夹后启动的项目，所以能够触发，如果在项目启动前不存在`classes`文件夹，通过后面创建`classes`文件夹再写入`class`文件，在出题过程中发现其实无法拿到我们写入的`class`类。
 
 ```http
 POST /admin;/api/GetClassValue;admin/ HTTP/1.1
