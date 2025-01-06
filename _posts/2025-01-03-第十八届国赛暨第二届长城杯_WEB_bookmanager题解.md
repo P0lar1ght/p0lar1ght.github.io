@@ -479,7 +479,7 @@ Host: 127.0.0.1:8080
 
 这个题听说比赛的时候好像是0解（我没参加，单纯研究）所以想尝试尝试，但因为是比赛结束后做的也就随便搞了个Java环境，在弹shell的时候没成功，这个题实战意义不详，点到为止吧，所以也不清楚这个方法到底是不是能够拿到flag或者说是官方解。不过在我去本地拉`hessian-lite 3.2.13`的时候对比发现`ClassFactory`这个类被动过，所以大概率是出题人的操作，不过也学到了不少东西。
 
-```maven
+```
 <!-- https://mvnrepository.com/artifact/com.alibaba/hessian-lite -->
 <dependency>
     <groupId>com.alibaba</groupId>
